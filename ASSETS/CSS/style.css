@@ -63,7 +63,7 @@ a.boton{
 .servicios{
   text-align: center;
   padding: 3em;
-  background: linear-gradient(#070707, 90%, #0097e2);
+  background: linear-gradient(#070707, 90%, #0097e1);
 
 }
 .servicios h1{
@@ -72,7 +72,8 @@ a.boton{
   color: #e0e0e0;
 }
 .servicios h1:hover{
-	text-decoration: line-through;
+  color: #0096e1;
+	text-decoration: overline;
 }
 .servicios img{
 	width: 25%;
@@ -81,7 +82,7 @@ a.boton{
 .card{
   align-items: center;
   background-color: #ffffff02 !important;
-  box-shadow: 2px 2px 6px 2px #e9e8e8ad;
+  box-shadow: 2px 2px 6px 2px #e9e8e886;
   color: #e0e0e0 !important;
 }
 .flipUp-360{
@@ -97,7 +98,7 @@ a.boton{
 
 /* GALERIA */
 .galeria{
-  background-color: #0c0c0c;
+  background: url(/ASSETS/IMAGES/metall.jpg);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin: auto;
@@ -111,9 +112,7 @@ a.boton{
   color: #e0e0e0;
   grid-column: 1 / -1;
 }
-.galeria h1:hover{
-	text-decoration: line-through;
-}
+
 .galeria img{
   width: 100%;
   vertical-align: top;
@@ -125,7 +124,7 @@ a.boton{
   display: block;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 5px #0096e1;
+  box-shadow: 2px 2px 6px 2px #000000;
 }
 .galeria a:hover img{
   filter: blur(2px);
@@ -169,16 +168,15 @@ a.boton{
 .next{
   display: block;
   text-align: center;
-  background-color: #000000a9;
   height: 40px;
   width: 40px;
   line-height: 40px;
-  border-radius: 20px;
 }
 
 /* UBICACION */
 .ubicacion{
   background-image: url(/ASSETS/IMAGES/metall.jpg);
+  border-top: 1px solid #e0e0e0;
 }
 .ubicacion h1{
   color: #e0e0e0;
@@ -188,6 +186,7 @@ a.boton{
   padding-bottom: 45%;
   position:relative;
   height: 0;
+  box-shadow: 2px 2px 6px 2px #000000;
 }
 .map-responsive iframe{
   left: 0;
@@ -195,6 +194,27 @@ a.boton{
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+/* BOTON WSP */
+.btn-wsp{
+  position: fixed;
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #00c147;
+  color: #f6f7f8;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 1px 10px rgb(0, 0, 0, 0.3);
+}
+.btn-wsp:hover{
+  text-decoration: none;
+  background: #f6f7f8;
+  color: #00c147;
 }
 
 /* FOOTER */
@@ -221,7 +241,8 @@ footer{
   text-align: center;
 }
 .footer-text{
-  color: #fffefe80;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 
