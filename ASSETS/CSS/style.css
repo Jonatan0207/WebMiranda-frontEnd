@@ -54,9 +54,12 @@ a.boton{
 }
 .presentacion{
   background: linear-gradient(#e80068d7, 10%, #070707);
-  padding: 6em;
+  padding: 5em;
   color: #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
+}
+.presentacion img{
+  padding-bottom: 30px;
 }
 
 /*SERVICIOS*/
