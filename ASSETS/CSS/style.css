@@ -3,6 +3,50 @@ body{
   font-family: 'Fira Sans', sans-serif !important;
 
 }
+/*PRECARGA DE PÁGINA*/
+.loading{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: #0e0d0d;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100000;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 0.5s ease-in-out;
+}
+.loading2{
+  clip-path: circle(0% at 50% 50%);
+}
+.imagen-lo{
+  width: 140px;
+  height: 130px;
+  position: absolute;
+  z-index: 1000;
+}
+.preloader{
+  width: 150px;
+  height: 140px;
+  background: #070707;
+  background: linear-gradient(90deg,#177af2cb,#0e0d0d);
+  display: inline-block;
+  border-radius: 80%;
+  animation-name: girarb;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes girarb{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 
 /*IMAGEN DE FONDO*/
 .fondo {
@@ -46,7 +90,6 @@ a.boton{
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-
 @keyframes pulse {
   0% {transform: scale(1);}
   50% {transform: scale(1.2);}
@@ -115,7 +158,6 @@ a.boton{
   color: #e0e0e0;
   grid-column: 1 / -1;
 }
-
 .galeria img{
   width: 100%;
   vertical-align: top;
@@ -156,8 +198,8 @@ a.boton{
   transform: scale(0);
 }
 .light-box img{
-  width: 65vw;
-  max-height: 80vh;
+  width: 55vw;
+  max-height: 85vh;
 }
 .light-box:target{
   transform: scale(1);
@@ -231,9 +273,6 @@ i.fa-brands.fa-instagram:hover{
 }
 i.fa-brands.fa-facebook:hover{
   color:  #1778f2;
-}
-i.fa-brands.fa-whatsapp:hover{
-  color:  #25d366;
 }
 i.fa-brands.fa-tiktok:hover{
   color: #00eeff;
